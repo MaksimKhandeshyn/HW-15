@@ -1,34 +1,45 @@
-
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .holder {
     display: flex;
-    border: 3px solid #000;
+    flex-wrap: wrap;
+    border: 2px solid #000;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+.item {
+    padding: 15px;
+    flex-basis: 444px;
     text-align: center;
-    flex-basis: 100px;
-    justify-content: space-between;
 }
 .item:nth-child(1) {
     background-color: #fd644d;
-    flex-grow: 5;
+    flex-grow: 2;
 }
 .item:nth-child(2) {
     background-color: #4983b2;
     order: 4;
-    flex-grow: 3;
+    flex-grow: 1;
 }
 .item:nth-child(3) {
     background-color: #663797;
     order: 3;
-    flex-grow: 3;
+    flex-grow: 1;
 }
 .item:nth-child(4) {
     background-color: #0e7f12;
     order: 5;
-    flex-grow: 3;
+    flex-grow: 1;
 }
+
 .item:nth-child(5) {
     background-color: #fda429;
-    flex-grow: 5;
     order: 2;
+    flex-grow: 2;
+}
+.item:nth-child(2), .item:nth-child(3), .item:nth-child(4) {
+    flex-basis: 20px;
 }
